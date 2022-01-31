@@ -2,8 +2,10 @@
 <br>
 ## Installation of cardano-node dependencies
 As we are first going to be installing cardano node, we are going to have to run this command to fetch dependencies.
-`sudo apt-get update -y && sudo apt-get upgrade -y
-sudo apt-get install automake build-essential pkg-config libffi-dev libgmp-dev libssl-dev libtinfo-dev libsystemd-dev zlib1g-dev make g++ tmux git jq wget libncursesw5 libtool autoconf -y`
+```
+sudo apt-get update -y && sudo apt-get upgrade -y
+sudo apt-get install automake build-essential pkg-config libffi-dev libgmp-dev libssl-dev libtinfo-dev libsystemd-dev zlib1g-dev make g++ tmux git jq wget libncursesw5 libtool autoconf -y
+```
 <br>
 After dependencies have been fetched we now have to install GHC (glasgow haskell compiler) through this command <br>
 `curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh`
