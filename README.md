@@ -37,7 +37,7 @@ git checkout 66f017f1
 make
 sudo make install
 ```
-Afterwards you will have to open up your .bashrc in `$HOME` and write into the lower region of the file (exampels of accessing file is `nano .bashrc`)<br>:
+Open up `.bashrc` through `nano $HOME/.bashrc` and add to the bottom:
 ```
 export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
