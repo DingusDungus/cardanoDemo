@@ -7,7 +7,9 @@ sudo apt-get update -y && sudo apt-get upgrade -y
 sudo apt-get install automake build-essential pkg-config libffi-dev libgmp-dev libssl-dev libtinfo-dev libsystemd-dev zlib1g-dev make g++ tmux git jq wget libncursesw5 libtool autoconf -y
 ```
 After dependencies have been fetched we now have to install GHC (glasgow haskell compiler) through this command <br>
-`curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh`
+```
+curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+```
 Press yes or enter on all questions asked <br>
 When the GHC components have been fetched run<br>
 ```
