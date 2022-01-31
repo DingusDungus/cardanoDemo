@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "user": "cardanoDemo",
+    "password": "idontknowthepass",
+    "database": "cardanoDemo",
+    "multipleStatements": true
+}
