@@ -1,12 +1,11 @@
 # cardanoDemo
-<br>
+
 ## Installation of cardano-node dependencies
 As we are first going to be installing cardano node, we are going to have to run this command to fetch dependencies.
 ```
 sudo apt-get update -y && sudo apt-get upgrade -y
 sudo apt-get install automake build-essential pkg-config libffi-dev libgmp-dev libssl-dev libtinfo-dev libsystemd-dev zlib1g-dev make g++ tmux git jq wget libncursesw5 libtool autoconf -y
 ```
-<br>
 After dependencies have been fetched we now have to install GHC (glasgow haskell compiler) through this command <br>
 `curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh`
 Press yes or enter on all questions asked <br>
@@ -20,15 +19,12 @@ Later install preferred version of cabal made på IOHK<br>
 ghcup install cabal 3.6.2.0
 ghcup set cabal 3.6.2.0
 ```
-<br>
-<br>
 ## Installation of cardano-node
 Making a working dir for cardano-node src <br>
 ```
 mkdir -p $HOME/cardano-src
 cd $HOME/cardano-src
 ```
-<br>
 Afterwards we must download and compile libsodium
 ```
 git clone https://github.com/input-output-hk/libsodium
@@ -39,13 +35,11 @@ git checkout 66f017f1
 make
 sudo make install
 ```
-<br>
 Afterwards you will have to open up your .bashrc in `$HOME` and write into the lower region of the file (exampels of accessing file is `nano .bashrc`)<br>:
 ```
 export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
 ```
-<br>
 ### Finally ready to start on cardano-node<br>
 Starting with:<br>
 ```
@@ -81,7 +75,6 @@ Then we add this to our .bashprofile in `$HOME`:
 export PATH="$HOME/.local/bin/:$PATH"
 ```
 Again through something like `nano ~/.bashprofile`
-<br>
 Finally we are now hopefully done ansd can be tested through writing `cardano-cli --version`
 
 # Testing and running the web app
