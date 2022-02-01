@@ -106,3 +106,13 @@ If everything has been followed correctly in the rest of the guide, this should 
 <br>
 After this we can do an easy `npm install` in the working directory of the web app followed by an `node index.js`. When this is done you can now find the web app on `localhost:1338` in your browser.
 <br>
+## Running a wallet-server
+Wallet server is a server which extends the cardano-node and adds more functionality to the system, this can be done through
+```
+cardano-wallet serve \
+    --port 1339 \
+    --testnet $HOME/cardano/testnet-byron-genesis.json \
+    --database $HOME/cardano/db \
+    --node-socket $CARDANO_NODE_SOCKET_PATH
+```
+Given that you have installed a cardano-wallet to your system
